@@ -1,0 +1,144 @@
+@import 'app/styles/vars';
+
+:host {
+    display: inline-flex;
+}
+
+input {
+    display: none;
+
+    & + label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        transition: 0.25s;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            width: 13px;
+            height: 13px;
+            margin: 0 5px 0 0;
+            background: transparent;
+            border: 2px solid $checkbox-border-color;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            opacity: 0;
+        }
+
+        &.reverse {   
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            &::before {
+                margin: 0;
+            } 
+
+            span {
+                margin: 0 5px 0 0;
+            }
+        }
+    }
+
+    &[type="checkbox"] {
+        & + label {
+            &::before {
+                border-radius: 3px; 
+            }
+        
+            &::after {   
+                inset: 2px auto auto 6px;
+                width: 3px;
+                height: 9px;
+                border-bottom: 2px solid $checkbox-mark-color;
+                border-right: 2px solid $checkbox-mark-color;
+                transform: rotateZ(42deg);
+            }
+        
+            &.reverse {
+                &::after {
+                    inset: 2px 6px auto auto;
+                }
+            }
+        }
+
+        &:checked {
+            & + label {
+                &::before {
+                    border-color: $checkbox-checked-color;
+                    background: $checkbox-checked-color;
+                }
+            
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:disabled + label {
+            &::before {
+                background: $checkbox-disabled-color;
+                border-color: $checkbox-disabled-color;
+            }
+        }
+    }
+
+    &[type="radio"] {
+        & + label {
+            &::before {
+                border-radius: 50%;
+                border-color: $checkbox-checked-color;
+                border-width: 3px;
+            }
+    
+            &::after {
+                inset: auto auto auto 5px;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%; 
+                background-color: $checkbox-checked-color;
+            }
+
+            &.reverse {
+                &::after {
+                    inset: auto 5px auto auto;
+                }
+            }
+        }
+
+        &:checked {
+            & + label {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:disabled {
+            & + label {
+                &::before {
+                    border-color: $checkbox-disabled-color;
+                }
+
+                &::after {
+                    background: $checkbox-disabled-color;
+                }
+            }
+           
+        }
+    }
+
+    &:disabled {
+        & + label {
+            cursor: default;
+
+            span {
+                color: $checkbox-disabled-color;
+            }
+        }
+    }
+}

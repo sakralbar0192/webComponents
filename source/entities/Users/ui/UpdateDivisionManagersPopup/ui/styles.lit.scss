@@ -1,0 +1,15 @@
+main {
+    overflow: hidden auto;
+
+    ul {
+        li {
+            margin: 0 0 5px;
+            padding: 3px;
+
+            iceberg-checkbox {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+label {
+    width: 130px;
+    margin: 0 10px 0 0;
+}
+
+iceberg-checkbox {
+    margin: 0 30px 0 0;
+}
+
+.searchFieldWrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+
+    iceberg-search-field {
+        width: 500px;
+    }
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.tableWrapper {
+    display: flex;
+    flex-direction: column;
+
+    users-table {
+        margin: 0 0 20px;
+    }
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    searched-divisions-table,
+    accounts-table,
+    projects-table,
+    users-table,
+    .tableWrapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,186 @@
+@import 'app/styles/vars';
+
+.popup {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 3px;
+    min-width: 350px;
+    max-height: 80vh;
+    margin: 30px;
+    border: 3px solid $popup-border-color;
+    background: $popup-background-color;
+    z-index: 1000;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;           
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all;
+    overflow: hidden;
+
+    &.narrow {
+        .popup {
+            max-width: 395px;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $overflow-color;
+}
+
+.modal.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal.invisible {
+    display: none;
+}
+
+.modal.visible .popup {
+    opacity: 1;
+}
+
+header {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: $popup-header-background-color;
+    color: $popup-header-color;
+    font-size: 14px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 10px 0 0;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .bottomRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        border: 0;
+        text-align: right;
+    }
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer iceberg-button {
+    margin: 0 0 0 5px;
+}
+
+.note {
+    color: $note-message-color;
+}
+
+.success {
+    color: $success-message-color;
+}
+
+.error {
+    color: $error-message-color;
+}
+
+p {
+    margin: 0;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+}
+
+li {
+    border-bottom: 1px solid $list-item-border-color;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fieldset {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-top: 0;
+    
+    label {
+        width: 125px;
+        padding: 0 0 0 5px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    }
+
+    p {
+        padding: 0 0 0 5px;
+    }
+}
+
+.fieldset >iceberg-input,
+.fieldset >iceberg-select,
+.fieldset >textarea {
+    width: 220px;
+}
+
+.requiredFieldset >label {
+    position: relative;
+}
+
+.requiredFieldset >label::before {
+    content: "*";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $asterisk-text-color;
+}
+
+.checkboxFieldset {
+    flex-direction: row-reverse;
+    margin: 0 0 0 135px;
+}
+
+.checkboxFieldset >label {
+    width: auto;
+    padding: 3px 0 3px 10px;
+    margin: 0;
+}

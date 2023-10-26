@@ -1,0 +1,33 @@
+@import 'app/styles/vars';
+
+:host {
+    --height-md: 38px;
+    --iceberg-input-padding: 7px;
+}
+
+label {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    svg {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 16px;
+        height: 16px;
+        fill: $primmary-icon-fill;
+    }
+
+    iceberg-input {
+        width: 100%;
+    }
+
+    &:hover {
+        svg {
+            fill: $icon-hover-fill;
+        }
+    }
+}

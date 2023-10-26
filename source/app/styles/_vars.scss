@@ -1,0 +1,400 @@
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-red: #ff0000;
+$color-green: #00ff00;
+$color-blue: #0000ff;
+$color-purple: #6200ee;
+$color-yellow: #ffcc00;
+$color-orange: #ffa700;
+$color-purple: #ff00ff;
+
+$color-dark-primary: #333333;
+$color-dark-secondary: #666666;
+
+$shade-grey-1: #999999;
+$shade-grey-2: #5a5a5a;
+$shade-grey-3: #f9f9f9;
+$shade-grey-4: #dfdfdf;
+$shade-grey-5: #dbdbdb;
+$shade-grey-6: #fefefe; 
+$shade-grey-7: #f0f0f0;
+$shade-grey-8: #d3d3d3;
+$shade-grey-9: #b8b8b8;
+$shade-grey-10: #e4e4e4;
+$shade-grey-11: #f2f2f2;
+$shade-grey-12: #eeeeee;
+$shade-grey-13: #d8d8d8;
+$shade-grey-14: #808080;
+$shade-grey-15: #f5f5f5;
+$shade-gray-16: #daf0fe;
+$shade-gray-17: #e0e0e0;
+
+$shade-blue-1: #3585d2;
+$shade-blue-2: #0078c2;
+$shade-blue-3: #51b6f6;
+$shade-blue-4: #0054a5;    
+$shade-blue-5: #0d47a1;
+$shade-blue-6: #00315e;
+$shade-blue-7: #303b46;
+$shade-blue-8: #d0e0f0;
+$shade-blue-9: #40e0d0;
+$shade-blue-10: #4b0082;
+$shade-blue-11: #add8e6;
+$shade-blue-12: #5791d5;
+$shade-blue-13: #00ffff;
+$shade-blue-15: #4169e1;
+$shade-blue-16: #008fd2;
+$shade-blue-17: #0073Ca;
+$shade-blue-18: #edf9ff;
+
+$shade-green-1: #a0f0a0;
+$shade-green-2: #37b629;
+$shade-green-3: #9fcc3f;
+$shade-green-4: #66bb6a;
+$shade-green-5: #c3f0c1;
+$shade-green-6: #adff2f;
+$shade-green-7: #9acd32;
+$shade-green-8: #008000;
+$shade-green-9: #80ff80;
+$shade-green-10: #30a030;
+$shade-green-11: #EEFFEE;
+
+$shade-red-1: #cc3f3f;
+$shade-red-2: #f0a0a0;
+$shade-red-3: #fa8072;
+$shade-red-4: #ffc0cb;
+$shade-red-5: #ffe4e1;
+$shade-red-6: #ff4a6a;
+$shade-red-7: #bc8f8f;
+$shade-red-8: #ee82ee;
+$shade-red-9: #a50d0d;
+$shade-red-10: #af5656;
+$shade-red-11: #ffebcd;
+
+$shade-orange-1: #cc7a3f;
+$shade-orange-2: #b8860b;
+$shade-orange-3: #f48120;
+$shade-orange-4: #ff8c00;
+$shade-orange-5: #a7842f;
+$shade-orange-6: #d2bf8e;
+
+$shade-yellow-1: #ccad3f;
+$shade-yellow-2: #ffd700;
+$shade-yellow-3: #fff59d;
+$shade-yellow-4: #ffff00;
+$shade-yellow-5: #fbf5cf;
+$shade-yellow-6: #e7e29c;
+
+$translucent-tone-grey-1: rgba(153, 153, 153, 0.5);
+$translucent-tone-grey-2: rgba(240, 240, 240, 0.5);
+$translucent-tone-grey-3: rgba(153, 153, 153, 0.05);
+$translucent-tone-blue-1: rgba(0, 84, 165, 0.5);
+$translucent-tone-blue-2: rgba(81, 182, 246, 0.5);
+$translucent-tone-black: rgba(0, 0, 0, 0.08);
+
+$linear-gradient-1: linear-gradient(to bottom, #f9f9f9 0%, #dbdbdb 74%);
+$linear-gradient-2: linear-gradient(to bottom, #333, #fff);
+$linear-gradient-3: linear-gradient(to top, #333, #fff);
+$linear-gradient-4: linear-gradient(to top, #b9dee9, #fefefe);
+
+$primary-color: $shade-blue-4;
+$overflow-color: $translucent-tone-grey-1;
+$list-item-border-color: $shade-grey-8;
+$text-primary-color: $color-dark-primary;
+$app-bg: $shade-grey-3;
+$breadcrumbs-txt-color: $shade-grey-2;
+$alert-text-color: $color-red;
+$error-text-color: $color-red;
+$note-message-color: $shade-blue-4;
+$last-wts-border-color: $shade-blue-13;
+$last-no-wts-active-text-color: $color-red;
+$last-no-wts-inactive-text-color: $color-purple;
+$success-message-color: $shade-green-2;
+$asterisk-text-color: $color-red;
+$link-text-color: $shade-blue-4;
+$inactive-link-color: $shade-grey-14;
+$link-text-hover-color: $shade-blue-17;
+$error-control-text-color: $shade-red-9;
+$error-control-bg-color: $shade-red-5;
+$error-control-border-color: $shade-red-10;
+$primmary-icon-fill: $shade-blue-4;
+$secondary-icon-fill: $shade-red-1;
+$additional-icon-fill: $shade-green-10;
+$icon-hover-fill: $shade-orange-3;
+$inactive-user-bg-color: $shade-blue-8;
+$active-user-bg-color: $color-white;
+$success-message-color: $shade-green-2;
+$error-message-color: $color-red;
+$note-message-color: $shade-blue-4;
+
+$dev-logo-color: $color-green;
+$test-logo-color: $color-red;
+$local-logo-color: $color-blue;
+$footer-logo-color: $shade-grey-14;
+$prod-logo-color: $shade-blue-6;
+
+$header-bg: $color-white;
+$header-shadow: $translucent-tone-black;
+
+$top-menu-accent-color: $shade-orange-3;
+$top-menu-item-text-color: $shade-blue-4;
+$top-menu-hovered-item-text-color: $shade-blue-2;
+$top-menu-inner-list-border: $shade-grey-7;
+
+$quick-search-primary-accent-color: $shade-blue-4;
+$quick-search-secondary-accent-color: $shade-orange-3;
+$quick-search-secondary-text-color: $shade-grey-1;
+$quick-search-primary-text-color: $color-dark-primary;
+$quick-search-hovered-link-bg-color: $translucent-tone-grey-3;
+$quick-search-show-more-text-color: $shade-blue-1;
+$quick-search-inactive-link-icon-color: $color-red;
+$quick-searck-bg-color: $color-white;
+$quick-search-top-gradient: $linear-gradient-2;
+$quick-search-bottom-gradient: $linear-gradient-3;
+
+$side-menu-bg-color: $shade-grey-6;
+$side-menu-shadow-color: $shade-grey-5;
+$quick-links-text-color: $shade-grey-2;
+$quick-link-bg-color: $shade-grey-7;
+$quick-link-color: $shade-blue-4;
+
+$footer-bg-color: $shade-blue-7;
+$footer-text-color: $shade-grey-1;
+
+$remove-icon-fill: $shade-red-1;
+$edit-icon-fill: $shade-blue-4;
+$icon-hover-fill: $shade-orange-3;
+
+$skills-exception-no-knowledge: $color-white;
+$skills-exception-partial-knowledge: $shade-green-9;
+$skills-exception-full-knowledge: $shade-green-10;
+
+$approve-project-hours-ready-color: $color-white;
+$approve-project-hours-approved-color: $shade-green-5;
+$approve-project-hours-zero-cap-color: $shade-yellow-2;
+$approve-project-hours-not-approved-color: $shade-grey-13;
+$approve-project-hours-can-not-approved-color: $shade-red-3;
+$approve-exception-hours-ready-color: $shade-grey-5;
+$approve-exception-hours-approved-color: $shade-green-4;
+$approve-exception-hours-zero-cap-color: $color-yellow;
+$approve-exception-hours-not-approved-color: $shade-grey-13;
+$approve-exception-hours-can-not-approved-color: $shade-red-1;
+
+$project-exceptions-invoiced: $shade-yellow-4;
+$project-exceptions-paid: $shade-green-8;
+$project-exceptions-not-paid: $shade-grey-14;
+$project-exceptions-without-periods: $shade-blue-13;
+$project-exceptions-active: $shade-blue-15;
+$project-exceptions-on-hold: $shade-blue-13;
+$project-exceptions-waranty: $shade-red-7;
+$project-exceptions-completed: $shade-red-8;
+$project-exceptions-has-zero-ext-budget: $shade-yellow-4;
+$project-exceptions-milestone-planned: $color-blue;
+$project-exceptions-milestone-actual-met: $shade-green-8;
+$project-exceptions-milestone-actual-slipped: $color-red;
+$project-exceptions-user-in-project: $shade-orange-4;
+
+$exception-workday-color: $text-primary-color;
+$exception-holyday-color: $color-red;
+$exception-sick-leave-bg-color: $shade-orange-2;
+$exception-day-off-had-bg-color: $shade-green-6;
+$exception-unpaid-absence-bg-color: $shade-green-7;
+$exception-vacation-bg-color: $shade-red-4;
+$exception-work-off-border-color: $shade-blue-9;
+$exception-business-trip-bg-color: $color-orange;
+$exception-planned-vacation-bg-color: $shade-red-5;
+$exception-overtime-border-color: $shade-yellow-2;
+$exception-corporate-activity-border-color: $shade-blue-10;
+$exception-compensated-vacation-bg-color: $shade-red-6;
+$exception-unemployed-bg-color: $shade-grey-14;
+$exception-maternity-leave-bg-color: $shade-blue-11;
+$exception-approved-absence-border-color: $shade-blue-10;
+$exception-child-care-bg-color: $shade-orange-2;
+
+$entity-switcher-bg-color: $linear-gradient-4;
+$entity-switcher-arrow-fill: $shade-blue-5;
+$entity-switcher-arrow-hover-fill: $shade-blue-1;
+$entity-switcher-arrow-inactive-fill: $shade-grey-2;
+
+$gray-table-border-color-one: $shade-grey-8;
+$gray-table-border-color-two: $shade-grey-5;
+$gray-table-header-bg-color: $linear-gradient-1;
+$gray-table-header-text-color: $color-dark-secondary;
+$gray-table-text-color: $color-dark-primary;
+$gray-table-link-color: $shade-blue-4;
+$gray-table-note-message-text-color: $shade-blue-2;
+$gray-table-header-shadow-color: $color-white;
+$gray-table-arrow-inactive-color: $shade-grey-1;
+$gray-table-arrow-active-color: $shade-grey-2;
+$gray-table-footer-bg-color: $shade-grey-12;
+
+$report-table-header-bg-color: $shade-red-11;
+$report-table-holyday-border-color: $color-red;
+$report-table-corner-cell-bg-color: $color-white;
+
+$form-asterisk-color: $color-red;
+$form-info-msg-color: $color-blue;
+$form-error-msg-color: $color-red;
+$form-characters-counter-color: $shade-green-2;
+
+$popup-border-color: $shade-grey-1;
+$popup-background-color: $color-white;
+$popup-header-background-color: $shade-blue-4;
+$popup-header-color: $color-white;
+$popup-error-msg-color: $color-red;
+$popup-success-msg-color: $shade-green-2;
+$popup-overflow-bg-color: $translucent-tone-grey-1;
+
+$legend-box-border-color: $shade-grey-2;
+$legend-color-box-bg-color: $color-white;
+$legend-title-border-color: $color-dark-primary;
+$legend-square-box-border-color: $shade-grey-13;
+
+$time-sheet-project-tasks-selected-skill-color: $color-white;
+$time-sheet-project-tasks-selected-skill-bg-color: $shade-grey-14;
+
+$time-sheet-3-date-range-day-color : $shade-blue-5;
+$time-sheet-3-day-cell-bg-color : $linear-gradient-4;
+$time-sheet-3-selected-field-bg-color: $shade-grey-9;
+$time-sheet-3-input-bg-color: $color-white;
+
+$time-sheet-report-by-project-task-selected-task-bg-color: $translucent-tone-grey-1;
+$time-sheet-report-by-project-task-selected-task-text-color: $color-black;
+
+$status-project-red-status-bg-color: $color-red;
+$status-project-yellow-status-bg-color: $color-yellow;
+$status-project-green-status-bg-color: $color-green;
+
+$project-status-inactive-user-bg-color: $shade-grey-14;
+
+$report-project-cost-zero-external-bg-color: $shade-yellow-2;
+
+$report-bookkeeping-entities-block-bg-color: $color-white;
+$report-bookkeeping-entities-block-border-color: $shade-blue-4;
+$report-bookkeeping-note-color: $shade-blue-4;
+
+$permission-grid-action-row-bg-color: $linear-gradient-4;
+$permission-grid-invalid-contex-bg-color: $shade-red-6;
+$permission-grid-changed-checkbox-border-color: $shade-orange-3;
+$permission-grid-ok-group-bg-color: $shade-green-11;
+$permission-grid-checkbox-check-mark-color: $shade-green-4;
+$permission-grid-checkbox-deny-mark-color: $color-red;
+$permission-grid-checkbox-bg-color: $color-white;
+$permission-grid-checkbox-border-color: $shade-grey-1;
+
+$monthly-report-fail-bg-color: $shade-red-2;
+$monthly-report-warning-bg-color: $shade-yellow-3;
+
+$login-window-shadow-color: $translucent-tone-blue-1;
+$login-window-border: $shade-blue-4;
+$login-title-color: $shade-grey-2;
+$login-alert-text-color: $color-red;
+$login-yandex-btn-bg-color: $color-yellow;    
+$login-google-btn-bg-color: $color-purple;
+
+$administration-permissions-none-used-context-cell-bg: $shade-grey-12;
+$administration-permissions-allow-cell-bg: $shade-green-1;
+$administration-permissions-deny-cell-bg: $shade-red-2;
+
+$exam-summary-corect-color: $shade-blue-1;
+$exam-summary-incorect-color: $shade-red-1;
+$exam-summary-skipped-color: $color-black;
+
+$find-users-inactive-bg-color: $shade-blue-8;
+$find-users-active-bg-color: $color-white;
+
+$vacation-list-bottom-info-bg-color: $shade-yellow-5;
+$vacation-list-info-btn-text-color: $shade-orange-5;
+$vacation-list-info-btn-border-color: $shade-yellow-6;
+$vacation-list-info-btn-bg-color: $shade-orange-6;
+
+$vacation-item-border-color: $shade-gray-17;
+
+$month-name-bg-color: $linear-gradient-4;
+$month-day-border-color: $shade-grey-15;
+$month-past-day-text-color: $shade-grey-14;
+$month-today-color: $shade-blue-16;
+$month-selected-day-bg-color: $shade-gray-16;
+$month-one-selected-day-border-color: $shade-blue-17;
+$month-approved-vacation-bg-color: $shade-red-4;
+
+$add-user-popup-border-color: $shade-grey-14;
+
+$xml-tree-view-link-color: $shade-blue-4;
+$xml-tree-view-bg-color: $color-white;
+$xml-tree-view-border-color: $shade-blue-4;
+
+$calendar-header-cell-bg-color: $shade-blue-12;
+$calendar-cell-border-color: $shade-grey-15;
+$calendar-month-cell-color: $text-primary-color;
+$calendar-month-cell-bg-color: $color-white;
+
+$tooltip-border-color: $color-black;
+
+$date-calendar-fill: $shade-blue-4;
+$date-calendar-hover-fill: $shade-blue-2;
+
+$bench-report-cell-warning-color: $shade-yellow-1;
+$bench-report-cell-danger-color: $shade-red-1;
+$bench-report-cell-better-color: $shade-orange-1;
+$bench-report-cell-normal-color:  $shade-green-3;
+$bench-report-cell-good-color: $shade-green-4;
+$bench-report-colored-cell-text-color: $color-white;
+
+$home-tab-border-color: $shade-grey-9;
+$home-tab-bg-color: $color-white;
+$home-tab-header-bg-color: $linear-gradient-4;
+$home-tab-title-bg-color: $shade-grey-10;
+$home-tab-title-border-color: $shade-grey-11;
+
+$planed-vacation-approved-date-bg-color: $shade-green-1;
+$planed-vacation-planned-date-bg-color: $shade-red-2;
+
+$approve-popup-border-color: $color-dark-primary;
+
+$control-border-color: $shade-blue-4;
+$control-focus-border-color: $shade-blue-3;
+$control-hover-border-color: $translucent-tone-blue-2;
+$control-disabled-text-color: $shade-grey-1;
+$control-disabled-bg-color: $translucent-tone-grey-2;
+
+$btn-text-color: $color-white;
+$btn-primary-bg-color: $shade-blue-4;
+$btn-secondary-bg-color: $shade-blue-5;
+$btn-disabled-bg-color: $shade-grey-4;
+$btn-primary-shadow-color: $translucent-tone-blue-1;
+$btn-outlined-bg-color: $color-white;
+$btn-outlined-color: $shade-blue-4;
+
+$checkbox-border-color: $shade-grey-1;
+$checkbox-checked-color: $shade-blue-4;
+$checkbox-mark-color: $color-white;
+$checkbox-disabled-color: $shade-grey-8;
+
+$autocomplete-bg-color: $color-white;
+$autocomplete-border-color: $translucent-tone-grey-2;
+$autocomplete-hover-border-color: $shade-orange-3;
+
+$calendar-arrow-fill-color: $color-dark-primary;
+$calendar-nav-button-fill-color: $shade-grey-1;
+$calendar-active-day-text-color: $shade-blue-18;
+$calendar-not-current-day-text-color: $shade-grey-1;
+$calendar-container-bg-color: $color-white;
+$calendar-container-border-color: $shade-grey-2;
+$calendar-dayname-border-color: $shade-grey-7;
+
+$iceberg-multiple-select-bg-color: $color-white;
+$iceberg-multiple-select-border-color: $shade-blue-4;
+
+$height-huge: 55px;
+$height-lg: 30px;
+$height-md: 25px;
+$height-sm: 22px;
+$height-xs: 15px;
+$height-mx: 100%;
+
+$fs-lg: 16px;
+$fs-md: 14px;
+$fs-sm: 12px;
+$fs-xs: 10px;

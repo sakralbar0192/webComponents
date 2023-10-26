@@ -1,0 +1,58 @@
+@import 'app/styles/vars';
+
+.container {
+    position: relative;
+    display: flex;
+    max-width: 196px;
+}
+
+iceberg-date-input {
+    width: 170px;
+    margin: 0 10px 0 0;
+    z-index: 2;
+}
+
+iceberg-calendar {
+    width: 100%;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button svg {
+    fill: $primary-color;
+}
+
+button:hover svg{
+    fill: $icon-hover-fill;
+}
+
+.dropdown {
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(100% + 10px); 
+    left: 0;
+    display: none;
+    width: 100%;
+    z-index: 2;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.dropdownShow .dropdown,
+.dropdownShow .overlay {
+    display: flex;
+}

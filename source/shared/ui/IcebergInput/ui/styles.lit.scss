@@ -1,0 +1,39 @@
+@import 'app/styles/vars';
+
+input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: var(--height-md, $height-md);
+    padding: var(--iceberg-input-padding, 2px 10px);
+    font-size: $fs-sm;
+    line-height: $height-sm;
+    color: $text-primary-color;
+    border: 1px solid $control-border-color;
+    appearance: none;
+
+    &::placeholder {
+        color: $color-dark-secondary;
+        font-size: $fs-sm;
+    }
+
+    &:focus {
+        outline: 1px solid $control-focus-border-color;
+    }
+
+    &:hover {
+        outline: 1px solid $control-hover-border-color;
+    }
+
+    &[disabled] {
+        cursor: default;
+        color: $control-disabled-text-color;
+        background-color: $control-disabled-bg-color;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            outline: 0;
+        }
+    }
+}

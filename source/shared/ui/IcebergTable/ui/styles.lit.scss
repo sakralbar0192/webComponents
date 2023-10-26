@@ -1,0 +1,135 @@
+@import 'app/styles/vars';
+
+table {
+    width: 100%;
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 18px;
+    border-collapse: collapse;
+    border: 1px solid $gray-table-border-color-one;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: middle;
+    border: 0;
+}
+
+th {
+    font-weight: bold;
+    color: $gray-table-header-text-color;
+    background-image: $gray-table-header-bg-color;
+    box-shadow: 1px 0 0 $gray-table-header-shadow-color inset;
+    white-space: nowrap;
+
+    &.sortable {
+        position: relative;
+        padding-right: 25px;
+        cursor: pointer;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            right: 7px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 7px solid $gray-table-arrow-inactive-color;
+            transition: 0.5s all ease;
+            pointer-events: none;                  
+        }
+
+        &.asc {
+            &::after {
+                border-bottom: 7px solid $gray-table-arrow-active-color;
+            }
+        }
+
+        &.des {
+            &::after {
+                border-bottom: 7px solid $gray-table-arrow-active-color;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+tbody >tr >td {
+    border-bottom: 1px solid $gray-table-border-color-one;
+    color: $text-primary-color;
+}
+
+tbody >tr >td >a {
+    color: $link-text-color;
+}
+
+tfoot >tr >td {
+    font-weight: bold;
+    background-color: $gray-table-footer-bg-color;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.linkLikeButton button {
+    color: $link-text-color;
+
+    &:hover {
+        color: $link-text-hover-color
+    }
+}
+
+.sm {
+    width: 5%;
+    text-align: center;
+}
+
+.primaryButton svg {
+    fill: $primmary-icon-fill;
+}
+
+
+.secondaryButton svg {
+    fill: $secondary-icon-fill;
+}
+
+.additionalButton svg {
+    fill: $additional-icon-fill;
+}
+
+.primaryButton,
+.secondaryButton,
+.additionalButton {
+    svg:hover {
+        fill: $icon-hover-fill
+    }
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCentered {
+    text-align: center;
+}
+
+.inactiveLink {
+    color: $inactive-link-color
+}
+
+.inactiveUser {
+    background-color: $inactive-user-bg-color;
+}

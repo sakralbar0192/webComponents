@@ -1,0 +1,129 @@
+@import 'app/styles/vars';
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: $calendar-container-bg-color;
+    padding: 5px;
+    color: $color-dark-primary;
+    border: 1px solid $color-dark-secondary;
+
+    button {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    header {    
+        justify-content: space-between;
+    }
+    
+    footer {
+        justify-content: center;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    header,
+    footer {
+        display: flex;
+        align-items: center;
+        height: 20px;
+
+        button {
+            &:hover {
+                color: $primary-color
+            }
+        }
+    }
+
+    .current {
+        border: 1px solid $primary-color;
+        background-color: $calendar-active-day-text-color;
+        color: $primary-color;
+    }
+    
+    .navButton {
+        position: relative;
+        width: 16px;
+        height: 16px;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 0;
+            height: 0;
+            transition: 0.5s all ease;
+            border: 5px solid transparent;
+            pointer-events: none;                  
+        }
+    
+        &.next::after {
+            border-left: 7px solid $calendar-nav-button-fill-color;
+        }
+    
+        &.prev::after {
+            border-right: 7px solid $calendar-nav-button-fill-color;
+        }
+    
+        &:hover {
+            &.next::after {
+                border-left: 7px solid $primary-color;
+            }
+        
+            &.prev::after {
+                border-right: 7px solid $primary-color;
+            }
+        }
+    }
+    
+    .calendarRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button:hover {
+            background-color: $calendar-active-day-text-color;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+        }
+
+        button.notCurrentMonthDay {
+            color: $calendar-not-current-day-text-color;
+        }
+    
+        &.week {
+            button,
+            span {
+                width: 20px;
+                height: 20px;
+                text-align: center;
+            }
+        }
+    
+        &.month {
+            button {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    
+        &.year {
+            button {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+

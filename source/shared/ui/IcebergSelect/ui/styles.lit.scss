@@ -1,0 +1,50 @@
+@import 'app/styles/vars';
+
+div {
+    position: relative;
+}
+
+select {
+    box-sizing: border-box;
+    width: 100%;
+    height: $height-md;
+    padding: 2px 30px 2px 10px;  
+    font-size: $fs-sm;
+    line-height: $height-sm;
+    color: $color-dark-primary;
+    border: 1px solid $control-border-color;
+    cursor: pointer;
+    appearance: none;
+
+    &:focus {
+        outline: 1px solid $control-focus-border-color;
+    }
+    
+    &:hover {
+        outline: 1px solid $control-hover-border-color;
+    }
+
+    & + span {
+        position: absolute;
+        top: 6px;        
+        right: 10px;        
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        border-bottom: 2px solid $control-border-color;
+        border-right: 2px solid $control-border-color;
+        transform: rotate(45deg);
+        pointer-events: none;
+    }
+    
+    &[disabled] {
+        cursor: default;
+        color: $control-disabled-text-color;
+        background-color: $control-disabled-bg-color;
+        text-decoration: none;
+    
+        & + span {
+            border-color: $control-disabled-text-color;
+        }
+    }
+}

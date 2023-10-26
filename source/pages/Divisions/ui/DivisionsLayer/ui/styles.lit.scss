@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 1050px;
+    margin: auto;
+}
+
+div divisions-table {
+    margin: 0 0 20px;
+}
+
+div iceberg-button {
+    align-self: flex-end
+}
